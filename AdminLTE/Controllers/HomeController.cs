@@ -18,7 +18,9 @@ namespace AdminLTE.Controllers
         {
             _logger = logger;
         }
-        [AllowAnonymous]
+        //if You want anyone can see your defalt home page without Login then uncomment it 
+       // [AllowAnonymous] 
+       
         public IActionResult Index()
         {
             return View();
